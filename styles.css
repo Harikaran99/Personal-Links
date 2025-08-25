@@ -1,0 +1,122 @@
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #0d0d0d;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+}
+
+/* Aesthetic glowing background */
+body::before {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255,100,0,0.25), transparent 70%);
+  top: 10%;
+  left: 10%;
+  filter: blur(80px);
+  z-index: -1;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(0,150,255,0.25), transparent 70%);
+  bottom: 10%;
+  right: 15%;
+  filter: blur(100px);
+  z-index: -1;
+}
+
+/* Container */
+.container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Card */
+.card {
+  background: linear-gradient(145deg, #111, #1c1c1c);
+  border-radius: 20px;
+  width: 220px;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.9);
+}
+
+.card i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #ff6a00;
+  transition: 0.3s;
+}
+
+.card:hover i {
+  color: #ffd000;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.card a {
+  text-decoration: none;
+  color: #bbb;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.card a:hover {
+  color: #ff6a00;
+}
+
+/* Header for inner pages */
+header {
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+header a {
+  color: #ff6a00;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+header a:hover {
+  color: #ffd000;
+}
