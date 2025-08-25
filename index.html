@@ -3,106 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aesthetic Popup Cards</title>
+  <title>Portfolio Home</title>
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    /* Global */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Poppins", sans-serif;
-    }
-
-    body {
-      background: #0d0d0d;
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      overflow: hidden;
-    }
-
-    .container {
-      display: flex;
-      gap: 2rem;
-    }
-
-    /* Card */
-    .card {
-      background: linear-gradient(145deg, #111, #1c1c1c);
-      border-radius: 20px;
-      width: 220px;
-      height: 260px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.6);
-      cursor: pointer;
-      transition: all 0.3s ease-in-out;
-      position: relative;
-    }
-
-    .card:hover {
-      transform: translateY(-10px) scale(1.05);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.9);
-    }
-
-    .card i {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-      color: #ff6a00;
-      transition: 0.3s;
-    }
-
-    .card:hover i {
-      color: #ffd000;
-    }
-
-    .card h3 {
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-      font-weight: 600;
-    }
-
-    .card a {
-      text-decoration: none;
-      color: #bbb;
-      font-size: 0.9rem;
-      transition: 0.3s;
-    }
-
-    .card a:hover {
-      color: #ff6a00;
-    }
-
-    /* Background aesthetic glow */
-    body::before {
-      content: '';
-      position: absolute;
-      width: 400px;
-      height: 400px;
-      background: radial-gradient(circle, rgba(255,100,0,0.25), transparent 70%);
-      top: 10%;
-      left: 10%;
-      filter: blur(80px);
-      z-index: -1;
-    }
-
-    body::after {
-      content: '';
-      position: absolute;
-      width: 350px;
-      height: 350px;
-      background: radial-gradient(circle, rgba(0,150,255,0.25), transparent 70%);
-      bottom: 10%;
-      right: 15%;
-      filter: blur(100px);
-      z-index: -1;
-    }
-  </style>
 </head>
 <body>
 
@@ -111,21 +14,21 @@
     <div class="card">
       <i class="fa-solid fa-code"></i>
       <h3>Projects</h3>
-      <a href="https://github.com/yourusername?tab=repositories" target="_blank">View More →</a>
+      <a href="projects.html">View More →</a>
     </div>
 
     <!-- Certificates -->
     <div class="card">
       <i class="fa-solid fa-certificate"></i>
       <h3>Certificates</h3>
-      <a href="https://your-certificates-link.com" target="_blank">Check Out →</a>
+      <a href="certificates.html">Check Out →</a>
     </div>
 
     <!-- Others -->
     <div class="card">
       <i class="fa-solid fa-layer-group"></i>
       <h3>Others</h3>
-      <a href="https://your-link.com" target="_blank">Explore →</a>
+      <a href="others.html">Explore →</a>
     </div>
   </div>
 
